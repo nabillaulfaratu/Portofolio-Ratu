@@ -1,0 +1,377 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#111827;
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+
+    background:linear-gradient(
+        90deg,
+        #60a5fa,
+        #ff8fc7
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff8fc7;
+}
+
+/* HERO */
+
+.hero{
+    width:85%;
+    margin:50px auto;
+
+    display:grid;
+    grid-template-columns:1fr 400px;
+    gap:40px;
+    align-items:center;
+}
+
+.hero-text{
+    background:#111827;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.tag{
+    display:inline-block;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    background:#1e293b;
+
+    color:#ff8fc7;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:85px;
+    line-height:1;
+
+    margin-bottom:20px;
+}
+
+.hero-desc{
+    font-size:20px;
+    color:#94a3b8;
+}
+
+.main-btn{
+    margin-top:30px;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6,
+        #ff8fc7
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.main-btn:hover{
+    transform:translateY(-5px);
+}
+
+.hero-image{
+    background:#111827;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    width:85%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+.dash-card{
+    background:#111827;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.dash-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#ff8fc7;
+}
+
+.dash-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.dash-card h2{
+    font-size:35px;
+}
+
+.dash-card p{
+    color:#94a3b8;
+}
+
+/* SECTION */
+
+.section-title{
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+}
+
+/* TENTANG */
+
+.about{
+    width:85%;
+    margin:100px auto;
+}
+
+.profile-card{
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:30px;
+
+    background:#111827;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.profile-avatar img{
+    width:100%;
+    border-radius:20px;
+}
+
+.profile-content h3{
+    font-size:35px;
+
+    margin-bottom:10px;
+}
+
+.profile-content p{
+    color:#94a3b8;
+
+    margin-bottom:30px;
+}
+
+.info-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.info-item{
+    background:#1e293b;
+
+    padding:20px;
+
+    border-radius:15px;
+}
+
+.info-item span{
+    display:block;
+
+    color:#94a3b8;
+
+    margin-bottom:10px;
+}
+
+/* TUGAS */
+
+.tugas{
+    width:85%;
+    margin:100px auto;
+}
+
+.task-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+}
+
+.task-card{
+    background:#111827;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.task-card:hover{
+    transform:translateY(-10px);
+
+    border-color:#60a5fa;
+}
+
+.task-icon{
+    font-size:55px;
+
+    margin-bottom:15px;
+}
+
+.task-card h3{
+    margin-bottom:10px;
+}
+
+.task-card p{
+    color:#94a3b8;
+}
+
+.task-card button{
+    margin-top:20px;
+
+    width:100%;
+}
+
+/* KONTAK */
+
+.kontak{
+    width:85%;
+    margin:100px auto;
+}
+
+.contact-card{
+    background:#111827;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+}
+
+.contact-card p{
+    margin:15px 0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+    grid-template-columns:1fr;
+}
+
+.dashboard{
+    grid-template-columns:1fr 1fr;
+}
+
+.task-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+.profile-card{
+    grid-template-columns:1fr;
+}
+
+.info-grid{
+    grid-template-columns:1fr;
+}
+
+}
